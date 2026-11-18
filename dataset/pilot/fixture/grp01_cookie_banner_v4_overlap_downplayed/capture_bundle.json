@@ -1,0 +1,171 @@
+{
+  "sample_id": "grp01_cookie_banner_v4_overlap_downplayed",
+  "partition": "pilot",
+  "source_type": "fixture",
+  "fixture_group": "grp01_cookie_banner",
+  "target": "fixtures\\grp01_cookie_banner_v4_overlap_downplayed.html",
+  "total_controls_captured": 3,
+  "unmatched_axe_findings": [
+    {
+      "rule": "link-name",
+      "target": "a[href$=\"#info\"]"
+    }
+  ],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "input",
+      "role": "input",
+      "visible_text": "on",
+      "accessible_name": "on",
+      "surrounding_text": "Remember my preference on this device",
+      "checked": false,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 376,
+        "y": 160,
+        "width": 13,
+        "height": 13,
+        "area_px": 169
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "Accept All Cookies",
+          "tag": "button",
+          "area_px": 7352,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Reject Non-Essential",
+          "tag": "a",
+          "area_px": 1772,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp01_cookie_banner_v4_overlap_downplayed\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp01_cookie_banner_v4_overlap_downplayed\\crops\\ctrl_001_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Accept All Cookies",
+      "accessible_name": "Accept All Cookies",
+      "surrounding_text": "Accept All Cookies\nReject Non-Essential",
+      "checked": false,
+      "font_size": "15px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgb(11, 87, 208)",
+      "bbox": {
+        "x": 360,
+        "y": 208,
+        "width": 179,
+        "height": 41,
+        "area_px": 7352
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Reject Non-Essential",
+          "tag": "a",
+          "area_px": 1772,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp01_cookie_banner_v4_overlap_downplayed\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp01_cookie_banner_v4_overlap_downplayed\\crops\\ctrl_002_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Reject Non-Essential",
+      "accessible_name": "Reject Non-Essential",
+      "surrounding_text": "Accept All Cookies\nReject Non-Essential",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(184, 184, 184)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 555,
+        "y": 221,
+        "width": 111,
+        "height": 16,
+        "area_px": 1772
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Accept All Cookies",
+          "tag": "button",
+          "area_px": 7352,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp01_cookie_banner_v4_overlap_downplayed\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp01_cookie_banner_v4_overlap_downplayed\\crops\\ctrl_003_context.png",
+      "axe_violations": [
+        "color-contrast"
+      ]
+    }
+  ]
+}

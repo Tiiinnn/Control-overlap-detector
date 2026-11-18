@@ -1,0 +1,847 @@
+{
+  "sample_id": "live_03_spotify",
+  "partition": "pilot",
+  "source_type": "live",
+  "fixture_group": "live_03_spotify",
+  "target": "https://www.spotify.com/ph-en/premium/",
+  "total_controls_captured": 12,
+  "unmatched_axe_findings": [],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Pilipinas (Filipino)",
+      "accessible_name": "Pilipinas (Filipino)",
+      "surrounding_text": "Pilipinas (Filipino)",
+      "checked": false,
+      "font_size": "12px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 15,
+        "y": 19,
+        "width": 94,
+        "height": 17,
+        "area_px": 1601
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        },
+        {
+          "text": "Premium Duo 2 accounts - For couples under one roof.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_001_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "\u2715\nClose",
+      "accessible_name": "\u2715\nClose",
+      "surrounding_text": "Pilipinas (Filipino)\n\u2715\nClose",
+      "checked": false,
+      "font_size": "18px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 1250,
+        "y": 15,
+        "width": 15,
+        "height": 25,
+        "area_px": 368
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        },
+        {
+          "text": "Premium Duo 2 accounts - For couples under one roof.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_002_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "SKIP TO CONTENT",
+      "accessible_name": "SKIP TO CONTENT",
+      "surrounding_text": "SKIP TO CONTENT\n Spotify - Home\nPremium plans\nSupport\nDownload\nSign up\nLog in\nTry 2 months for \u20b1169",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(18, 18, 18)",
+      "bg_color": "rgb(255, 255, 255)",
+      "bbox": {
+        "x": 592,
+        "y": 71,
+        "width": 96,
+        "height": 32,
+        "area_px": 3072
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        },
+        {
+          "text": "Premium Duo 2 accounts - For couples under one roof.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_003_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_004",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Spotify - Home",
+      "accessible_name": "Spotify - Home",
+      "surrounding_text": "Spotify - Home",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 32,
+        "y": 75,
+        "width": 118,
+        "height": 32,
+        "area_px": 3776
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        },
+        {
+          "text": "Premium Duo 2 accounts - For couples under one roof.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_004_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_004_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_005",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Premium plans",
+      "accessible_name": "Premium plans",
+      "surrounding_text": "Premium plans",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 437,
+        "y": 55,
+        "width": 130,
+        "height": 72,
+        "area_px": 9341
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        },
+        {
+          "text": "Premium Duo 2 accounts - For couples under one roof.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_005_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_005_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_006",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Support",
+      "accessible_name": "Support",
+      "surrounding_text": "Support",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 567,
+        "y": 55,
+        "width": 101,
+        "height": 72,
+        "area_px": 7302
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_006_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_006_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_007",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Download",
+      "accessible_name": "Download",
+      "surrounding_text": "Download",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 668,
+        "y": 55,
+        "width": 117,
+        "height": 72,
+        "area_px": 8402
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_007_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_007_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_008",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Sign up",
+      "accessible_name": "Sign up",
+      "surrounding_text": "Sign up",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(217, 218, 220)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 826,
+        "y": 55,
+        "width": 95,
+        "height": 72,
+        "area_px": 6855
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_008_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_008_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_009",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Log in",
+      "accessible_name": "Log in",
+      "surrounding_text": "Log in",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(217, 218, 220)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 921,
+        "y": 55,
+        "width": 84,
+        "height": 72,
+        "area_px": 6069
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_009_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_009_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_010",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Try 2 months for \u20b1169",
+      "accessible_name": "Try 2 months for \u20b1169",
+      "surrounding_text": "Try 2 months for \u20b1169",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(0, 0, 238)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 1025,
+        "y": 72,
+        "width": 223,
+        "height": 38,
+        "area_px": 8459
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_010_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_010_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_011",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Try 2 months for \u20b1169",
+      "accessible_name": "Try 2 months for \u20b1169",
+      "surrounding_text": "Try 2 months for \u20b1169",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 1025,
+        "y": 72,
+        "width": 223,
+        "height": 38,
+        "area_px": 8459
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "Pilipinas (Filipino)",
+          "tag": "a",
+          "area_px": 1601,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "\u2715\nClose",
+          "tag": "button",
+          "area_px": 368,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 3072,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "Spotify - Home",
+          "tag": "a",
+          "area_px": 3776,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium plans",
+          "tag": "button",
+          "area_px": 9341,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Premium Individual 1 account - For one person.",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(30, 215, 96)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_011_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_011_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_012",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Try 2 months for \u20b1169",
+      "accessible_name": "Checkout for Premium Individual",
+      "surrounding_text": "Try 2 months for \u20b1169",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(158, 158, 255)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 25,
+        "y": 698,
+        "width": 223,
+        "height": 48,
+        "area_px": 10685
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 127,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "View all plans",
+          "tag": "a",
+          "area_px": 7997,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(158, 158, 255)"
+        },
+        {
+          "text": "Terms apply.",
+          "tag": "a",
+          "area_px": 1154,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(179, 179, 179)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_012_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_03_spotify\\crops\\ctrl_012_context.png",
+      "axe_violations": []
+    }
+  ]
+}

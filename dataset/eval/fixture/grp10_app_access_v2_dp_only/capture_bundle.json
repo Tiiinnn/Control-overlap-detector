@@ -1,0 +1,215 @@
+{
+  "sample_id": "grp10_app_access_v2_dp_only",
+  "partition": "eval",
+  "source_type": "fixture",
+  "fixture_group": "grp10_app_access",
+  "target": "fixtures\\grp10_app_access_v2_dp_only.html",
+  "total_controls_captured": 4,
+  "unmatched_axe_findings": [],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "X",
+      "accessible_name": "Close dialog",
+      "surrounding_text": "Unlock Exclusive Member Pricing\nX",
+      "checked": false,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgb(246, 248, 250)",
+      "bbox": {
+        "x": 888,
+        "y": 69,
+        "width": 32,
+        "height": 32,
+        "area_px": 1024
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 247
+      },
+      "siblings": [
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Unlock Member Pricing",
+          "tag": "button",
+          "area_px": 8639,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "No thanks, overpaying doesn't bother me",
+          "tag": "a",
+          "area_px": 3332,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(89, 89, 89)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp10_app_access_v2_dp_only\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp10_app_access_v2_dp_only\\crops\\ctrl_001_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "input",
+      "role": "input",
+      "visible_text": "on",
+      "accessible_name": "on",
+      "surrounding_text": "Send me promotional brand deals and marketing digests",
+      "checked": true,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 376,
+        "y": 169,
+        "width": 13,
+        "height": 13,
+        "area_px": 169
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 247
+      },
+      "siblings": [
+        {
+          "text": "X",
+          "tag": "button",
+          "area_px": 1024,
+          "bg_color": "rgb(246, 248, 250)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Unlock Member Pricing",
+          "tag": "button",
+          "area_px": 8639,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "No thanks, overpaying doesn't bother me",
+          "tag": "a",
+          "area_px": 3332,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(89, 89, 89)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp10_app_access_v2_dp_only\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp10_app_access_v2_dp_only\\crops\\ctrl_002_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Unlock Member Pricing",
+      "accessible_name": "Unlock Member Pricing",
+      "surrounding_text": "Unlock Member Pricing\nNo thanks, overpaying doesn't bother me",
+      "checked": false,
+      "font_size": "15px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgb(11, 87, 208)",
+      "bbox": {
+        "x": 360,
+        "y": 217,
+        "width": 211,
+        "height": 41,
+        "area_px": 8639
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 247
+      },
+      "siblings": [
+        {
+          "text": "X",
+          "tag": "button",
+          "area_px": 1024,
+          "bg_color": "rgb(246, 248, 250)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "No thanks, overpaying doesn't bother me",
+          "tag": "a",
+          "area_px": 3332,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(89, 89, 89)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp10_app_access_v2_dp_only\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp10_app_access_v2_dp_only\\crops\\ctrl_003_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_004",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "No thanks, overpaying doesn't bother me",
+      "accessible_name": "No thanks, overpaying doesn't bother me",
+      "surrounding_text": "Unlock Member Pricing\nNo thanks, overpaying doesn't bother me",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(89, 89, 89)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 587,
+        "y": 230,
+        "width": 208,
+        "height": 16,
+        "area_px": 3332
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 247
+      },
+      "siblings": [
+        {
+          "text": "X",
+          "tag": "button",
+          "area_px": 1024,
+          "bg_color": "rgb(246, 248, 250)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Unlock Member Pricing",
+          "tag": "button",
+          "area_px": 8639,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp10_app_access_v2_dp_only\\crops\\ctrl_004_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp10_app_access_v2_dp_only\\crops\\ctrl_004_context.png",
+      "axe_violations": []
+    }
+  ]
+}

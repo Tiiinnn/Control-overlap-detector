@@ -1,0 +1,217 @@
+{
+  "sample_id": "grp02_newsletter_modal_v1_normal_a11y",
+  "partition": "pilot",
+  "source_type": "fixture",
+  "fixture_group": "grp02_newsletter_modal",
+  "target": "fixtures\\grp02_newsletter_modal_v1_normal_a11y.html",
+  "total_controls_captured": 4,
+  "unmatched_axe_findings": [],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "",
+      "accessible_name": "",
+      "surrounding_text": "Unlock 20% Off Your First Order",
+      "checked": false,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgb(246, 248, 250)",
+      "bbox": {
+        "x": 888,
+        "y": 69,
+        "width": 32,
+        "height": 32,
+        "area_px": 1024
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 249
+      },
+      "siblings": [
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Claim My 20% Discount",
+          "tag": "button",
+          "area_px": 8708,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "No Thanks",
+          "tag": "button",
+          "area_px": 5085,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(31, 35, 40)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v1_normal_a11y\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v1_normal_a11y\\crops\\ctrl_001_context.png",
+      "axe_violations": [
+        "button-name"
+      ]
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "input",
+      "role": "input",
+      "visible_text": "on",
+      "accessible_name": "on",
+      "surrounding_text": "Send me daily promotional offers, partner coupons, and marketing emails",
+      "checked": false,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 376,
+        "y": 169,
+        "width": 13,
+        "height": 13,
+        "area_px": 169
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 249
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "button",
+          "area_px": 1024,
+          "bg_color": "rgb(246, 248, 250)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Claim My 20% Discount",
+          "tag": "button",
+          "area_px": 8708,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "No Thanks",
+          "tag": "button",
+          "area_px": 5085,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(31, 35, 40)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v1_normal_a11y\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v1_normal_a11y\\crops\\ctrl_002_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Claim My 20% Discount",
+      "accessible_name": "Claim My 20% Discount",
+      "surrounding_text": "Claim My 20% Discount\nNo Thanks",
+      "checked": false,
+      "font_size": "15px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgb(11, 87, 208)",
+      "bbox": {
+        "x": 360,
+        "y": 218,
+        "width": 212,
+        "height": 41,
+        "area_px": 8708
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 249
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "button",
+          "area_px": 1024,
+          "bg_color": "rgb(246, 248, 250)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "No Thanks",
+          "tag": "button",
+          "area_px": 5085,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(31, 35, 40)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v1_normal_a11y\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v1_normal_a11y\\crops\\ctrl_003_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_004",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "No Thanks",
+      "accessible_name": "No Thanks",
+      "surrounding_text": "Claim My 20% Discount\nNo Thanks",
+      "checked": false,
+      "font_size": "15px",
+      "text_color": "rgb(31, 35, 40)",
+      "bg_color": "rgb(255, 255, 255)",
+      "bbox": {
+        "x": 588,
+        "y": 217,
+        "width": 118,
+        "height": 43,
+        "area_px": 5085
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 249
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "button",
+          "area_px": 1024,
+          "bg_color": "rgb(246, 248, 250)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Claim My 20% Discount",
+          "tag": "button",
+          "area_px": 8708,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v1_normal_a11y\\crops\\ctrl_004_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v1_normal_a11y\\crops\\ctrl_004_context.png",
+      "axe_violations": []
+    }
+  ]
+}

@@ -1,0 +1,832 @@
+{
+  "sample_id": "live_01_zalora",
+  "partition": "pilot",
+  "source_type": "live",
+  "fixture_group": "live_01_zalora",
+  "target": "https://www.zalora.com.ph",
+  "total_controls_captured": 12,
+  "unmatched_axe_findings": [],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "30 Days Free* Returns | T&C Apply",
+      "accessible_name": "30 Days Free* Returns | T&C Apply",
+      "surrounding_text": "30 Days Free* Returns | T&C Apply\nEarn points on every order with MEMBERS CLUB\nSave more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 16,
+        "y": 8,
+        "width": 243,
+        "height": 24,
+        "area_px": 5828
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Zalora",
+          "tag": "a",
+          "area_px": 3520,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_001_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Earn points on every order with MEMBERS CLUB",
+      "accessible_name": "Earn points on every order with MEMBERS CLUB",
+      "surrounding_text": "30 Days Free* Returns | T&C Apply\nEarn points on every order with MEMBERS CLUB\nSave more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 393,
+        "y": 8,
+        "width": 319,
+        "height": 24,
+        "area_px": 7650
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Zalora",
+          "tag": "a",
+          "area_px": 3520,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_002_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+      "accessible_name": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+      "surrounding_text": "30 Days Free* Returns | T&C Apply\nEarn points on every order with MEMBERS CLUB\nSave more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 846,
+        "y": 8,
+        "width": 418,
+        "height": 24,
+        "area_px": 10025
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Zalora",
+          "tag": "a",
+          "area_px": 3520,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_003_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_004",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "",
+      "accessible_name": "Zalora",
+      "surrounding_text": "",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 48,
+        "y": 66,
+        "width": 176,
+        "height": 20,
+        "area_px": 3520
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_004_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_004_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_005",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "",
+      "accessible_name": "Search",
+      "surrounding_text": "",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgb(0, 0, 0)",
+      "bbox": {
+        "x": 872,
+        "y": 60,
+        "width": 32,
+        "height": 32,
+        "area_px": 1024
+      },
+      "container_bbox": {
+        "x": 304,
+        "y": 56,
+        "width": 620,
+        "height": 40
+      },
+      "siblings": [],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_005_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_005_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_006",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "",
+      "accessible_name": "Wishlist",
+      "surrounding_text": "Login / Register",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 1160,
+        "y": 64,
+        "width": 24,
+        "height": 24,
+        "area_px": 576
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_006_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_006_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_007",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "",
+      "accessible_name": "Cart",
+      "surrounding_text": "",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 1208,
+        "y": 64,
+        "width": 24,
+        "height": 24,
+        "area_px": 576
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_007_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_007_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_008",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "WOMEN",
+      "accessible_name": "WOMEN",
+      "surrounding_text": "WOMEN",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 32,
+        "y": 112,
+        "width": 89,
+        "height": 36,
+        "area_px": 3190
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_008_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_008_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_009",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "MEN",
+      "accessible_name": "MEN",
+      "surrounding_text": "MEN",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 129,
+        "y": 112,
+        "width": 64,
+        "height": 36,
+        "area_px": 2301
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_009_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_009_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_010",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "KIDS",
+      "accessible_name": "KIDS",
+      "surrounding_text": "KIDS",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 201,
+        "y": 112,
+        "width": 64,
+        "height": 36,
+        "area_px": 2293
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_010_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_010_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_011",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "LUXURY",
+      "accessible_name": "LUXURY",
+      "surrounding_text": "LUXURY",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 272,
+        "y": 112,
+        "width": 86,
+        "height": 36,
+        "area_px": 3089
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_011_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_011_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_012",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "BEAUTY",
+      "accessible_name": "BEAUTY",
+      "surrounding_text": "BEAUTY",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(38, 38, 38)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 366,
+        "y": 112,
+        "width": 85,
+        "height": 36,
+        "area_px": 3072
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 3841
+      },
+      "siblings": [
+        {
+          "text": "Extra 10% Off with the appUse App",
+          "tag": "div",
+          "area_px": 0,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Close banner",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Use App",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgb(38, 38, 38)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "30 Days Free* Returns | T&C Apply",
+          "tag": "a",
+          "area_px": 5828,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Earn points on every order with MEMBERS CLUB",
+          "tag": "a",
+          "area_px": 7650,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        },
+        {
+          "text": "Save more on the ZALORA App! Get Extra 10% Off + Free Shipping",
+          "tag": "a",
+          "area_px": 10025,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(38, 38, 38)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_012_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_01_zalora\\crops\\ctrl_012_context.png",
+      "axe_violations": []
+    }
+  ]
+}

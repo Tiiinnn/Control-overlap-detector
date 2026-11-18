@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thesis Proof-of-Concept Fixture</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      color: #1a1a1a;
+      padding: 32px;
+      line-height: 1.5;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #dcdcdc;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      max-width: 640px;
+    }
+    h1 { font-size: 22px; margin-bottom: 16px; }
+    h2 { font-size: 16px; margin-top: 0; color: #333333; }
+    .btn-primary {
+      background: #0b57d0;
+      color: #ffffff;
+      border: none;
+      padding: 12px 22px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .btn-empty-icon {
+      background: #eeeeee;
+      border: 1px solid #cccccc;
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+    }
+    .decline-overlap {
+      display: inline-block;
+      margin-top: 12px;
+      color: #b8b8b8; /* Fails WCAG 1.4.3 color-contrast on #ffffff */
+      font-size: 11px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Control-Level Overlap Proof-of-Concept Fixture</h1>
+
+    <!-- 1. NORMAL CONTROL -->
+    <section class="card" id="sec-normal">
+      <h2>1. Normal Navigation Action</h2>
+      <button class="btn-primary" type="button">Browse Product Catalog</button>
+    </section>
+
+    <!-- 2. ACCESSIBILITY-ONLY VIOLATION (button-name) -->
+    <section class="card" id="sec-a11y-only">
+      <h2>2. Accessibility-Only Control (Missing Button Name)</h2>
+      <button class="btn-empty-icon" type="button"></button>
+    </section>
+
+    <!-- 3. DECEPTIVE PATTERN-ONLY (preselected_marketing_consent with valid label & contrast) -->
+    <section class="card" id="sec-dp-only">
+      <h2>3. Deceptive-Only Control (Preselected Marketing Consent)</h2>
+      <label for="promo-valid">
+        <input id="promo-valid" type="checkbox" checked />
+        Yes, send me exclusive promotional deals, partner discounts, and marketing newsletters.
+      </label>
+    </section>
+
+    <!-- 4. OVERLAP A: Confirmshaming + Visually Downplayed Rejection + color-contrast violation -->
+    <section class="card" id="sec-overlap-promo" role="dialog" aria-label="Discount Offer">
+      <h2>4. Overlap Control (Confirmshaming + Low Contrast)</h2>
+      <p>Unlock 25% off your order right now.</p>
+      <button class="btn-primary" type="button">Claim My 25% Discount</button>
+      <br />
+      <a href="#dismiss" class="decline-overlap">
+        No thanks, I prefer paying full price and missing out
+      </a>
+    </section>
+
+    <!-- 5. OVERLAP B: Preselected Marketing Consent + missing programmatic label violation -->
+    <section class="card" id="sec-overlap-checkbox">
+      <h2>5. Overlap Control (Preselected Consent + Missing Form Label)</h2>
+      <div>
+        <input type="checkbox" checked />
+        <span>Automatically subscribe me to weekly promotional offers and sponsor emails</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

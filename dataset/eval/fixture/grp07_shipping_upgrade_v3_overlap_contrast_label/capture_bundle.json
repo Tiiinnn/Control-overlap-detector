@@ -1,0 +1,219 @@
+{
+  "sample_id": "grp07_shipping_upgrade_v3_overlap_contrast_label",
+  "partition": "eval",
+  "source_type": "fixture",
+  "fixture_group": "grp07_shipping_upgrade",
+  "target": "fixtures\\grp07_shipping_upgrade_v3_overlap_contrast_label.html",
+  "total_controls_captured": 4,
+  "unmatched_axe_findings": [],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "?",
+      "accessible_name": "Help",
+      "surrounding_text": "Upgrade to Express Priority Delivery\n?",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(0, 0, 238)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 911,
+        "y": 72,
+        "width": 9,
+        "height": 18,
+        "area_px": 160
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Upgrade to Express",
+          "tag": "button",
+          "area_px": 7614,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "No, I enjoy waiting longer for my deliveries",
+          "tag": "a",
+          "area_px": 3435,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp07_shipping_upgrade_v3_overlap_contrast_label\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp07_shipping_upgrade_v3_overlap_contrast_label\\crops\\ctrl_001_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "input",
+      "role": "input",
+      "visible_text": "on",
+      "accessible_name": "on",
+      "surrounding_text": "Send promotional partner offers and seasonal catalog mailings",
+      "checked": true,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 376,
+        "y": 160,
+        "width": 13,
+        "height": 13,
+        "area_px": 169
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "?",
+          "tag": "a",
+          "area_px": 160,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "Upgrade to Express",
+          "tag": "button",
+          "area_px": 7614,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "No, I enjoy waiting longer for my deliveries",
+          "tag": "a",
+          "area_px": 3435,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp07_shipping_upgrade_v3_overlap_contrast_label\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp07_shipping_upgrade_v3_overlap_contrast_label\\crops\\ctrl_002_context.png",
+      "axe_violations": [
+        "label"
+      ]
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Upgrade to Express",
+      "accessible_name": "Upgrade to Express",
+      "surrounding_text": "Upgrade to Express\nNo, I enjoy waiting longer for my deliveries",
+      "checked": false,
+      "font_size": "15px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgb(11, 87, 208)",
+      "bbox": {
+        "x": 360,
+        "y": 208,
+        "width": 186,
+        "height": 41,
+        "area_px": 7614
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "?",
+          "tag": "a",
+          "area_px": 160,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "No, I enjoy waiting longer for my deliveries",
+          "tag": "a",
+          "area_px": 3435,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp07_shipping_upgrade_v3_overlap_contrast_label\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp07_shipping_upgrade_v3_overlap_contrast_label\\crops\\ctrl_003_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_004",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "No, I enjoy waiting longer for my deliveries",
+      "accessible_name": "No, I enjoy waiting longer for my deliveries",
+      "surrounding_text": "Upgrade to Express\nNo, I enjoy waiting longer for my deliveries",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(184, 184, 184)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 562,
+        "y": 221,
+        "width": 215,
+        "height": 16,
+        "area_px": 3435
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "?",
+          "tag": "a",
+          "area_px": 160,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Upgrade to Express",
+          "tag": "button",
+          "area_px": 7614,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp07_shipping_upgrade_v3_overlap_contrast_label\\crops\\ctrl_004_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp07_shipping_upgrade_v3_overlap_contrast_label\\crops\\ctrl_004_context.png",
+      "axe_violations": [
+        "color-contrast"
+      ]
+    }
+  ]
+}

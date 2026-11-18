@@ -1,0 +1,217 @@
+{
+  "sample_id": "grp06_flash_sale_modal_v1_normal_a11y",
+  "partition": "eval",
+  "source_type": "fixture",
+  "fixture_group": "grp06_flash_sale_modal",
+  "target": "fixtures\\grp06_flash_sale_modal_v1_normal_a11y.html",
+  "total_controls_captured": 4,
+  "unmatched_axe_findings": [],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "",
+      "accessible_name": "",
+      "surrounding_text": "Wait! Extra 15% Off Expires Soon",
+      "checked": false,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgb(246, 248, 250)",
+      "bbox": {
+        "x": 888,
+        "y": 69,
+        "width": 32,
+        "height": 32,
+        "area_px": 1024
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 249
+      },
+      "siblings": [
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Apply 15% Voucher",
+          "tag": "button",
+          "area_px": 7500,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Close Offer",
+          "tag": "button",
+          "area_px": 5229,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(31, 35, 40)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp06_flash_sale_modal_v1_normal_a11y\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp06_flash_sale_modal_v1_normal_a11y\\crops\\ctrl_001_context.png",
+      "axe_violations": [
+        "button-name"
+      ]
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "input",
+      "role": "input",
+      "visible_text": "on",
+      "accessible_name": "on",
+      "surrounding_text": "Sign me up for SMS and email marketing promotions",
+      "checked": false,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 376,
+        "y": 169,
+        "width": 13,
+        "height": 13,
+        "area_px": 169
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 249
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "button",
+          "area_px": 1024,
+          "bg_color": "rgb(246, 248, 250)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Apply 15% Voucher",
+          "tag": "button",
+          "area_px": 7500,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Close Offer",
+          "tag": "button",
+          "area_px": 5229,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(31, 35, 40)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp06_flash_sale_modal_v1_normal_a11y\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp06_flash_sale_modal_v1_normal_a11y\\crops\\ctrl_002_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Apply 15% Voucher",
+      "accessible_name": "Apply 15% Voucher",
+      "surrounding_text": "Apply 15% Voucher\nClose Offer",
+      "checked": false,
+      "font_size": "15px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgb(11, 87, 208)",
+      "bbox": {
+        "x": 360,
+        "y": 218,
+        "width": 183,
+        "height": 41,
+        "area_px": 7500
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 249
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "button",
+          "area_px": 1024,
+          "bg_color": "rgb(246, 248, 250)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Close Offer",
+          "tag": "button",
+          "area_px": 5229,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(31, 35, 40)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp06_flash_sale_modal_v1_normal_a11y\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp06_flash_sale_modal_v1_normal_a11y\\crops\\ctrl_003_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_004",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Close Offer",
+      "accessible_name": "Close Offer",
+      "surrounding_text": "Apply 15% Voucher\nClose Offer",
+      "checked": false,
+      "font_size": "15px",
+      "text_color": "rgb(31, 35, 40)",
+      "bg_color": "rgb(255, 255, 255)",
+      "bbox": {
+        "x": 559,
+        "y": 217,
+        "width": 122,
+        "height": 43,
+        "area_px": 5229
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 249
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "button",
+          "area_px": 1024,
+          "bg_color": "rgb(246, 248, 250)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Apply 15% Voucher",
+          "tag": "button",
+          "area_px": 7500,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp06_flash_sale_modal_v1_normal_a11y\\crops\\ctrl_004_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp06_flash_sale_modal_v1_normal_a11y\\crops\\ctrl_004_context.png",
+      "axe_violations": []
+    }
+  ]
+}

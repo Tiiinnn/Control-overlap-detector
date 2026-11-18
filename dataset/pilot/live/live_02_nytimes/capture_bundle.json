@@ -1,0 +1,832 @@
+{
+  "sample_id": "live_02_nytimes",
+  "partition": "pilot",
+  "source_type": "live",
+  "fixture_group": "live_02_nytimes",
+  "target": "https://www.nytimes.com",
+  "total_controls_captured": 12,
+  "unmatched_axe_findings": [],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "SKIP TO CONTENT",
+      "accessible_name": "SKIP TO CONTENT",
+      "surrounding_text": "SKIP TO CONTENT\nSKIP TO SITE INDEX\nSKIP ADVERTISEMENT\nSearch\nU.S.INTERNATIONALCANADAESPA\u00d1OL\u4e2d\u6587\nLOG IN\nTuesday, November 17, 2026\nToday\u2019s Paper\nS&P 500\n-1.05%\nU.S.\nWorld\nBusiness\nArts\nLifestyle\nOpinion\n",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgb(255, 255, 255)",
+      "bbox": {
+        "x": 111,
+        "y": -1,
+        "width": 25,
+        "height": 20,
+        "area_px": 500
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "SKIP TO SITE INDEX",
+          "tag": "a",
+          "area_px": 500,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "SKIP ADVERTISEMENT",
+          "tag": "a",
+          "area_px": 1,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "U.S.",
+          "tag": "a",
+          "area_px": 991,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(18, 18, 18)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_001_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "SKIP TO SITE INDEX",
+      "accessible_name": "SKIP TO SITE INDEX",
+      "surrounding_text": "SKIP TO CONTENT\nSKIP TO SITE INDEX\nSKIP ADVERTISEMENT\nSearch\nU.S.INTERNATIONALCANADAESPA\u00d1OL\u4e2d\u6587\nLOG IN\nTuesday, November 17, 2026\nToday\u2019s Paper\nS&P 500\n-1.05%\nU.S.\nWorld\nBusiness\nArts\nLifestyle\nOpinion\n",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgb(255, 255, 255)",
+      "bbox": {
+        "x": 111,
+        "y": -1,
+        "width": 25,
+        "height": 20,
+        "area_px": 500
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 500,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "SKIP ADVERTISEMENT",
+          "tag": "a",
+          "area_px": 1,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "U.S.",
+          "tag": "a",
+          "area_px": 991,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(18, 18, 18)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_002_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Search",
+      "accessible_name": "Search",
+      "surrounding_text": "Search",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 32,
+        "y": 275,
+        "width": 34,
+        "height": 33,
+        "area_px": 1122
+      },
+      "container_bbox": {
+        "x": 40,
+        "y": 271,
+        "width": 1200,
+        "height": 48
+      },
+      "siblings": [
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "U.S.",
+          "tag": "a",
+          "area_px": 991,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "INTERNATIONAL",
+          "tag": "a",
+          "area_px": 2686,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        },
+        {
+          "text": "CANADA",
+          "tag": "a",
+          "area_px": 1550,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        },
+        {
+          "text": "ESPA\u00d1OL",
+          "tag": "a",
+          "area_px": 1703,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_003_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_004",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "U.S.",
+      "accessible_name": "U.S.",
+      "surrounding_text": "U.S.",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(18, 18, 18)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 475,
+        "y": 278,
+        "width": 41,
+        "height": 24,
+        "area_px": 991
+      },
+      "container_bbox": {
+        "x": 40,
+        "y": 271,
+        "width": 1200,
+        "height": 48
+      },
+      "siblings": [
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "INTERNATIONAL",
+          "tag": "a",
+          "area_px": 2686,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        },
+        {
+          "text": "CANADA",
+          "tag": "a",
+          "area_px": 1550,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        },
+        {
+          "text": "ESPA\u00d1OL",
+          "tag": "a",
+          "area_px": 1703,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_004_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_004_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_005",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "INTERNATIONAL",
+      "accessible_name": "INTERNATIONAL",
+      "surrounding_text": "INTERNATIONAL",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(90, 90, 90)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 517,
+        "y": 278,
+        "width": 112,
+        "height": 24,
+        "area_px": 2686
+      },
+      "container_bbox": {
+        "x": 40,
+        "y": 271,
+        "width": 1200,
+        "height": 48
+      },
+      "siblings": [
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "U.S.",
+          "tag": "a",
+          "area_px": 991,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "CANADA",
+          "tag": "a",
+          "area_px": 1550,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        },
+        {
+          "text": "ESPA\u00d1OL",
+          "tag": "a",
+          "area_px": 1703,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_005_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_005_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_006",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "CANADA",
+      "accessible_name": "CANADA",
+      "surrounding_text": "CANADA",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(90, 90, 90)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 628,
+        "y": 278,
+        "width": 65,
+        "height": 24,
+        "area_px": 1550
+      },
+      "container_bbox": {
+        "x": 40,
+        "y": 271,
+        "width": 1200,
+        "height": 48
+      },
+      "siblings": [
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "U.S.",
+          "tag": "a",
+          "area_px": 991,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "INTERNATIONAL",
+          "tag": "a",
+          "area_px": 2686,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        },
+        {
+          "text": "ESPA\u00d1OL",
+          "tag": "a",
+          "area_px": 1703,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_006_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_006_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_007",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "ESPA\u00d1OL",
+      "accessible_name": "ESPA\u00d1OL",
+      "surrounding_text": "ESPA\u00d1OL",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(90, 90, 90)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 693,
+        "y": 278,
+        "width": 71,
+        "height": 24,
+        "area_px": 1703
+      },
+      "container_bbox": {
+        "x": 40,
+        "y": 271,
+        "width": 1200,
+        "height": 48
+      },
+      "siblings": [
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "U.S.",
+          "tag": "a",
+          "area_px": 991,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "INTERNATIONAL",
+          "tag": "a",
+          "area_px": 2686,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        },
+        {
+          "text": "CANADA",
+          "tag": "a",
+          "area_px": 1550,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_007_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_007_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_008",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "\u4e2d\u6587",
+      "accessible_name": "\u4e2d\u6587",
+      "surrounding_text": "\u4e2d\u6587",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(90, 90, 90)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 764,
+        "y": 278,
+        "width": 41,
+        "height": 24,
+        "area_px": 980
+      },
+      "container_bbox": {
+        "x": 40,
+        "y": 271,
+        "width": 1200,
+        "height": 48
+      },
+      "siblings": [
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "U.S.",
+          "tag": "a",
+          "area_px": 991,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "INTERNATIONAL",
+          "tag": "a",
+          "area_px": 2686,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        },
+        {
+          "text": "CANADA",
+          "tag": "a",
+          "area_px": 1550,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_008_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_008_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_009",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "LOG IN",
+      "accessible_name": "LOG IN",
+      "surrounding_text": "LOG IN",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 1170,
+        "y": 275,
+        "width": 63,
+        "height": 29,
+        "area_px": 1839
+      },
+      "container_bbox": {
+        "x": 40,
+        "y": 271,
+        "width": 1200,
+        "height": 48
+      },
+      "siblings": [
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "U.S.",
+          "tag": "a",
+          "area_px": 991,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(18, 18, 18)"
+        },
+        {
+          "text": "INTERNATIONAL",
+          "tag": "a",
+          "area_px": 2686,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        },
+        {
+          "text": "CANADA",
+          "tag": "a",
+          "area_px": 1550,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(90, 90, 90)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_009_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_009_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_010",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Today\u2019s Paper",
+      "accessible_name": "Today\u2019s Paper",
+      "surrounding_text": "Today\u2019s Paper",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(18, 18, 18)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 40,
+        "y": 347,
+        "width": 82,
+        "height": 20,
+        "area_px": 1641
+      },
+      "container_bbox": {
+        "x": 40,
+        "y": 367,
+        "width": 1200,
+        "height": 0
+      },
+      "siblings": [],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_010_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_010_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_011",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "",
+      "accessible_name": "The New York Times homepage",
+      "surrounding_text": "",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 398,
+        "y": 314,
+        "width": 485,
+        "height": 64,
+        "area_px": 31040
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 500,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "SKIP TO SITE INDEX",
+          "tag": "a",
+          "area_px": 500,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "SKIP ADVERTISEMENT",
+          "tag": "a",
+          "area_px": 1,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_011_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_011_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_012",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "U.S.",
+      "accessible_name": "U.S.",
+      "surrounding_text": "U.S.",
+      "checked": false,
+      "font_size": "14px",
+      "text_color": "rgb(18, 18, 18)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 55,
+        "y": 386,
+        "width": 35,
+        "height": 46,
+        "area_px": 1620
+      },
+      "container_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900
+      },
+      "siblings": [
+        {
+          "text": "SKIP TO CONTENT",
+          "tag": "a",
+          "area_px": 500,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "SKIP TO SITE INDEX",
+          "tag": "a",
+          "area_px": 500,
+          "bg_color": "rgb(255, 255, 255)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "SKIP ADVERTISEMENT",
+          "tag": "a",
+          "area_px": 1,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search & Section Navigation",
+          "tag": "button",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Search",
+          "tag": "button",
+          "area_px": 1122,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "The New York Times homepage",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_012_control.png",
+      "context_crop": "dataset\\pilot\\live\\live_02_nytimes\\crops\\ctrl_012_context.png",
+      "axe_violations": []
+    }
+  ]
+}

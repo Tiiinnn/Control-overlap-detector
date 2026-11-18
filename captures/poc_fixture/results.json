@@ -1,0 +1,289 @@
+{
+  "target": "fixtures/poc_fixture.html",
+  "model_id": "gemini-3.5-flash-lite",
+  "runs_per_control": 3,
+  "total_controls": 6,
+  "unmatched_axe_findings": [],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "button",
+      "display_label": "Browse Product Catalog",
+      "outcome": "Normal",
+      "axe_violations": [],
+      "deceptive_pattern": "none",
+      "run_labels": [
+        "none",
+        "none",
+        "none"
+      ],
+      "confidence": 1.0,
+      "rationale": "The element is a standard, neutral navigation button with no deceptive patterns such as preselected marketing checkboxes, confirmshaming, or visually downplayed rejection styles.",
+      "control_crop": "ctrl_001_control.png",
+      "context_crop": "ctrl_001_context.png",
+      "metadata": {
+        "control_id": "ctrl_001",
+        "tag": "button",
+        "role": "button",
+        "visible_text": "Browse Product Catalog",
+        "accessible_name": "Browse Product Catalog",
+        "surrounding_text": "1. Normal Navigation Action\nBrowse Product Catalog",
+        "checked": false,
+        "font_size": "15px",
+        "text_color": "rgb(255, 255, 255)",
+        "bg_color": "rgb(11, 87, 208)",
+        "bbox": {
+          "x": 61,
+          "y": 162,
+          "width": 218,
+          "height": 41,
+          "area_px": 8946
+        },
+        "container_bbox": {
+          "x": 40,
+          "y": 104,
+          "width": 682,
+          "height": 120
+        },
+        "siblings": []
+      }
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "button",
+      "display_label": "2. Accessibility-Only Control (Missing Button Name",
+      "outcome": "Accessibility-only",
+      "axe_violations": [
+        "button-name"
+      ],
+      "deceptive_pattern": "none",
+      "run_labels": [
+        "none",
+        "none",
+        "none"
+      ],
+      "confidence": 1.0,
+      "rationale": "The inspected control is part of an accessibility test element with no deceptive patterns such as preselected marketing consent, confirmshaming, or visually downplayed rejection.",
+      "control_crop": "ctrl_002_control.png",
+      "context_crop": "ctrl_002_context.png",
+      "metadata": {
+        "control_id": "ctrl_002",
+        "tag": "button",
+        "role": "button",
+        "visible_text": "",
+        "accessible_name": "",
+        "surrounding_text": "2. Accessibility-Only Control (Missing Button Name)",
+        "checked": false,
+        "font_size": "13.3333px",
+        "text_color": "rgb(0, 0, 0)",
+        "bg_color": "rgb(238, 238, 238)",
+        "bbox": {
+          "x": 61,
+          "y": 302,
+          "width": 36,
+          "height": 36,
+          "area_px": 1296
+        },
+        "container_bbox": {
+          "x": 40,
+          "y": 244,
+          "width": 682,
+          "height": 120
+        },
+        "siblings": []
+      }
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "input",
+      "display_label": "on",
+      "outcome": "Deceptive pattern-only",
+      "axe_violations": [],
+      "deceptive_pattern": "preselected_marketing_consent",
+      "run_labels": [
+        "preselected_marketing_consent",
+        "preselected_marketing_consent",
+        "preselected_marketing_consent"
+      ],
+      "confidence": 1.0,
+      "rationale": "The checkbox is preselected (checked: true) upon load and its surrounding label contains explicit marketing and promotional terminology ('exclusive promotional deals... and marketing newsletters'), matching the preselected_marketing_consent pattern.",
+      "control_crop": "ctrl_003_control.png",
+      "context_crop": "ctrl_003_context.png",
+      "metadata": {
+        "control_id": "ctrl_003",
+        "tag": "input",
+        "role": "input",
+        "visible_text": "on",
+        "accessible_name": "on",
+        "surrounding_text": "Yes, send me exclusive promotional deals, partner discounts, and marketing newsletters.",
+        "checked": true,
+        "font_size": "13.3333px",
+        "text_color": "rgb(0, 0, 0)",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "bbox": {
+          "x": 65,
+          "y": 447,
+          "width": 13,
+          "height": 13,
+          "area_px": 169
+        },
+        "container_bbox": {
+          "x": 40,
+          "y": 384,
+          "width": 682,
+          "height": 127
+        },
+        "siblings": []
+      }
+    },
+    {
+      "control_id": "ctrl_004",
+      "tag": "button",
+      "display_label": "Claim My 25% Discount",
+      "outcome": "Normal",
+      "axe_violations": [],
+      "deceptive_pattern": "none",
+      "run_labels": [
+        "none",
+        "none",
+        "none"
+      ],
+      "confidence": 1.0,
+      "rationale": "The evaluated control is the primary accept button ('Claim My 25% Discount'). While its sibling rejection link exhibits confirmshaming and visual downplaying, this specific control is a standard primary action button (none).",
+      "control_crop": "ctrl_004_control.png",
+      "context_crop": "ctrl_004_context.png",
+      "metadata": {
+        "control_id": "ctrl_004",
+        "tag": "button",
+        "role": "button",
+        "visible_text": "Claim My 25% Discount",
+        "accessible_name": "Claim My 25% Discount",
+        "surrounding_text": "4. Overlap Control (Confirmshaming + Low Contrast)\n\nUnlock 25% off your order right now.\n\nClaim My 25% Discount\nNo thanks, I prefer paying full price and missing out",
+        "checked": false,
+        "font_size": "15px",
+        "text_color": "rgb(255, 255, 255)",
+        "bg_color": "rgb(11, 87, 208)",
+        "bbox": {
+          "x": 61,
+          "y": 633,
+          "width": 212,
+          "height": 41,
+          "area_px": 8708
+        },
+        "container_bbox": {
+          "x": 40,
+          "y": 532,
+          "width": 682,
+          "height": 194
+        },
+        "siblings": [
+          {
+            "text": "No thanks, I prefer paying full price and missing out",
+            "tag": "a",
+            "area_px": 4126,
+            "bg_color": "rgba(0, 0, 0, 0)",
+            "text_color": "rgb(184, 184, 184)"
+          }
+        ]
+      }
+    },
+    {
+      "control_id": "ctrl_005",
+      "tag": "a",
+      "display_label": "No thanks, I prefer paying full price and missing out",
+      "outcome": "OVERLAP",
+      "axe_violations": [
+        "color-contrast"
+      ],
+      "deceptive_pattern": "confirmshaming",
+      "run_labels": [
+        "confirmshaming",
+        "confirmshaming",
+        "confirmshaming"
+      ],
+      "confidence": 1.0,
+      "rationale": "The control pairs an acceptance button with a rejection link that uses guilt-inducing language, satisfying the criteria for confirmshaming.",
+      "control_crop": "ctrl_005_control.png",
+      "context_crop": "ctrl_005_context.png",
+      "metadata": {
+        "control_id": "ctrl_005",
+        "tag": "a",
+        "role": "a",
+        "visible_text": "No thanks, I prefer paying full price and missing out",
+        "accessible_name": "No thanks, I prefer paying full price and missing out",
+        "surrounding_text": "4. Overlap Control (Confirmshaming + Low Contrast)\n\nUnlock 25% off your order right now.\n\nClaim My 25% Discount\nNo thanks, I prefer paying full price and missing out",
+        "checked": false,
+        "font_size": "11px",
+        "text_color": "rgb(184, 184, 184)",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "bbox": {
+          "x": 61,
+          "y": 686,
+          "width": 250,
+          "height": 17,
+          "area_px": 4126
+        },
+        "container_bbox": {
+          "x": 40,
+          "y": 532,
+          "width": 682,
+          "height": 194
+        },
+        "siblings": [
+          {
+            "text": "Claim My 25% Discount",
+            "tag": "button",
+            "area_px": 8708,
+            "bg_color": "rgb(11, 87, 208)",
+            "text_color": "rgb(255, 255, 255)"
+          }
+        ]
+      }
+    },
+    {
+      "control_id": "ctrl_006",
+      "tag": "input",
+      "display_label": "on",
+      "outcome": "OVERLAP",
+      "axe_violations": [
+        "label"
+      ],
+      "deceptive_pattern": "preselected_marketing_consent",
+      "run_labels": [
+        "preselected_marketing_consent",
+        "preselected_marketing_consent",
+        "preselected_marketing_consent"
+      ],
+      "confidence": 1.0,
+      "rationale": "The control is a preselected checkbox at page load whose associated label explicitly asks for consent to receive promotional offers and sponsor emails, perfectly matching the preselected_marketing_consent definition.",
+      "control_crop": "ctrl_006_control.png",
+      "context_crop": "ctrl_006_context.png",
+      "metadata": {
+        "control_id": "ctrl_006",
+        "tag": "input",
+        "role": "input",
+        "visible_text": "on",
+        "accessible_name": "on",
+        "surrounding_text": "Automatically subscribe me to weekly promotional offers and sponsor emails",
+        "checked": true,
+        "font_size": "13.3333px",
+        "text_color": "rgb(0, 0, 0)",
+        "bg_color": "rgba(0, 0, 0, 0)",
+        "bbox": {
+          "x": 65,
+          "y": 808,
+          "width": 13,
+          "height": 13,
+          "area_px": 169
+        },
+        "container_bbox": {
+          "x": 40,
+          "y": 746,
+          "width": 682,
+          "height": 103
+        },
+        "siblings": []
+      }
+    }
+  ]
+}

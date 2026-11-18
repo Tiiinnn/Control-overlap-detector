@@ -1,0 +1,10 @@
+{
+  "sample_id": "live_04_uniqlo",
+  "partition": "pilot",
+  "source_type": "live",
+  "fixture_group": "live_04_uniqlo",
+  "target": "https://www.uniqlo.com/ph/en/",
+  "total_controls_captured": 0,
+  "unmatched_axe_findings": [],
+  "controls": []
+}

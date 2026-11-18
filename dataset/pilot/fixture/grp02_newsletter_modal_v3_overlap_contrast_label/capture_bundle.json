@@ -1,0 +1,219 @@
+{
+  "sample_id": "grp02_newsletter_modal_v3_overlap_contrast_label",
+  "partition": "pilot",
+  "source_type": "fixture",
+  "fixture_group": "grp02_newsletter_modal",
+  "target": "fixtures\\grp02_newsletter_modal_v3_overlap_contrast_label.html",
+  "total_controls_captured": 4,
+  "unmatched_axe_findings": [],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "?",
+      "accessible_name": "Help",
+      "surrounding_text": "Unlock 20% Off Your First Order\n?",
+      "checked": false,
+      "font_size": "16px",
+      "text_color": "rgb(0, 0, 238)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 911,
+        "y": 72,
+        "width": 9,
+        "height": 18,
+        "area_px": 160
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Claim My 20% Discount",
+          "tag": "button",
+          "area_px": 8708,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "No thanks, I prefer paying full price",
+          "tag": "a",
+          "area_px": 2848,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v3_overlap_contrast_label\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v3_overlap_contrast_label\\crops\\ctrl_001_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "input",
+      "role": "input",
+      "visible_text": "on",
+      "accessible_name": "on",
+      "surrounding_text": "Send me daily promotional offers, partner coupons, and marketing emails",
+      "checked": true,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 376,
+        "y": 160,
+        "width": 13,
+        "height": 13,
+        "area_px": 169
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "?",
+          "tag": "a",
+          "area_px": 160,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "Claim My 20% Discount",
+          "tag": "button",
+          "area_px": 8708,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "No thanks, I prefer paying full price",
+          "tag": "a",
+          "area_px": 2848,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v3_overlap_contrast_label\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v3_overlap_contrast_label\\crops\\ctrl_002_context.png",
+      "axe_violations": [
+        "label"
+      ]
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Claim My 20% Discount",
+      "accessible_name": "Claim My 20% Discount",
+      "surrounding_text": "Claim My 20% Discount\nNo thanks, I prefer paying full price",
+      "checked": false,
+      "font_size": "15px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgb(11, 87, 208)",
+      "bbox": {
+        "x": 360,
+        "y": 208,
+        "width": 212,
+        "height": 41,
+        "area_px": 8708
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "?",
+          "tag": "a",
+          "area_px": 160,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "No thanks, I prefer paying full price",
+          "tag": "a",
+          "area_px": 2848,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v3_overlap_contrast_label\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v3_overlap_contrast_label\\crops\\ctrl_003_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_004",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "No thanks, I prefer paying full price",
+      "accessible_name": "No thanks, I prefer paying full price",
+      "surrounding_text": "Claim My 20% Discount\nNo thanks, I prefer paying full price",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(184, 184, 184)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 588,
+        "y": 221,
+        "width": 178,
+        "height": 16,
+        "area_px": 2848
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "?",
+          "tag": "a",
+          "area_px": 160,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Claim My 20% Discount",
+          "tag": "button",
+          "area_px": 8708,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        }
+      ],
+      "control_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v3_overlap_contrast_label\\crops\\ctrl_004_control.png",
+      "context_crop": "dataset\\pilot\\fixture\\grp02_newsletter_modal_v3_overlap_contrast_label\\crops\\ctrl_004_context.png",
+      "axe_violations": [
+        "color-contrast"
+      ]
+    }
+  ]
+}

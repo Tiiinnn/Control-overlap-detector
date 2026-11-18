@@ -1,0 +1,362 @@
+[
+  {
+    "sample_id": "grp01_cookie_banner_v1_normal_a11y",
+    "fixture_group": "grp01_cookie_banner",
+    "partition": "pilot",
+    "source_type": "fixture",
+    "domain": "Cookie Consent Banner",
+    "file_path": "fixtures\\grp01_cookie_banner_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp01_cookie_banner_v2_dp_only",
+    "fixture_group": "grp01_cookie_banner",
+    "partition": "pilot",
+    "source_type": "fixture",
+    "domain": "Cookie Consent Banner",
+    "file_path": "fixtures\\grp01_cookie_banner_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp01_cookie_banner_v3_overlap_contrast_label",
+    "fixture_group": "grp01_cookie_banner",
+    "partition": "pilot",
+    "source_type": "fixture",
+    "domain": "Cookie Consent Banner",
+    "file_path": "fixtures\\grp01_cookie_banner_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp01_cookie_banner_v4_overlap_downplayed",
+    "fixture_group": "grp01_cookie_banner",
+    "partition": "pilot",
+    "source_type": "fixture",
+    "domain": "Cookie Consent Banner",
+    "file_path": "fixtures\\grp01_cookie_banner_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  },
+  {
+    "sample_id": "grp02_newsletter_modal_v1_normal_a11y",
+    "fixture_group": "grp02_newsletter_modal",
+    "partition": "pilot",
+    "source_type": "fixture",
+    "domain": "E-Commerce Discount Popup",
+    "file_path": "fixtures\\grp02_newsletter_modal_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp02_newsletter_modal_v2_dp_only",
+    "fixture_group": "grp02_newsletter_modal",
+    "partition": "pilot",
+    "source_type": "fixture",
+    "domain": "E-Commerce Discount Popup",
+    "file_path": "fixtures\\grp02_newsletter_modal_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp02_newsletter_modal_v3_overlap_contrast_label",
+    "fixture_group": "grp02_newsletter_modal",
+    "partition": "pilot",
+    "source_type": "fixture",
+    "domain": "E-Commerce Discount Popup",
+    "file_path": "fixtures\\grp02_newsletter_modal_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp02_newsletter_modal_v4_overlap_downplayed",
+    "fixture_group": "grp02_newsletter_modal",
+    "partition": "pilot",
+    "source_type": "fixture",
+    "domain": "E-Commerce Discount Popup",
+    "file_path": "fixtures\\grp02_newsletter_modal_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  },
+  {
+    "sample_id": "grp03_checkout_upsell_v1_normal_a11y",
+    "fixture_group": "grp03_checkout_upsell",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Checkout Protection Upsell",
+    "file_path": "fixtures\\grp03_checkout_upsell_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp03_checkout_upsell_v2_dp_only",
+    "fixture_group": "grp03_checkout_upsell",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Checkout Protection Upsell",
+    "file_path": "fixtures\\grp03_checkout_upsell_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp03_checkout_upsell_v3_overlap_contrast_label",
+    "fixture_group": "grp03_checkout_upsell",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Checkout Protection Upsell",
+    "file_path": "fixtures\\grp03_checkout_upsell_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp03_checkout_upsell_v4_overlap_downplayed",
+    "fixture_group": "grp03_checkout_upsell",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Checkout Protection Upsell",
+    "file_path": "fixtures\\grp03_checkout_upsell_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  },
+  {
+    "sample_id": "grp04_trial_cancel_v1_normal_a11y",
+    "fixture_group": "grp04_trial_cancel",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Subscription Retention Dialog",
+    "file_path": "fixtures\\grp04_trial_cancel_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp04_trial_cancel_v2_dp_only",
+    "fixture_group": "grp04_trial_cancel",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Subscription Retention Dialog",
+    "file_path": "fixtures\\grp04_trial_cancel_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp04_trial_cancel_v3_overlap_contrast_label",
+    "fixture_group": "grp04_trial_cancel",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Subscription Retention Dialog",
+    "file_path": "fixtures\\grp04_trial_cancel_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp04_trial_cancel_v4_overlap_downplayed",
+    "fixture_group": "grp04_trial_cancel",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Subscription Retention Dialog",
+    "file_path": "fixtures\\grp04_trial_cancel_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  },
+  {
+    "sample_id": "grp05_account_signup_v1_normal_a11y",
+    "fixture_group": "grp05_account_signup",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Account Registration Form",
+    "file_path": "fixtures\\grp05_account_signup_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp05_account_signup_v2_dp_only",
+    "fixture_group": "grp05_account_signup",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Account Registration Form",
+    "file_path": "fixtures\\grp05_account_signup_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp05_account_signup_v3_overlap_contrast_label",
+    "fixture_group": "grp05_account_signup",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Account Registration Form",
+    "file_path": "fixtures\\grp05_account_signup_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp05_account_signup_v4_overlap_downplayed",
+    "fixture_group": "grp05_account_signup",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Account Registration Form",
+    "file_path": "fixtures\\grp05_account_signup_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  },
+  {
+    "sample_id": "grp06_flash_sale_modal_v1_normal_a11y",
+    "fixture_group": "grp06_flash_sale_modal",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Flash Sale Countdown Popup",
+    "file_path": "fixtures\\grp06_flash_sale_modal_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp06_flash_sale_modal_v2_dp_only",
+    "fixture_group": "grp06_flash_sale_modal",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Flash Sale Countdown Popup",
+    "file_path": "fixtures\\grp06_flash_sale_modal_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp06_flash_sale_modal_v3_overlap_contrast_label",
+    "fixture_group": "grp06_flash_sale_modal",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Flash Sale Countdown Popup",
+    "file_path": "fixtures\\grp06_flash_sale_modal_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp06_flash_sale_modal_v4_overlap_downplayed",
+    "fixture_group": "grp06_flash_sale_modal",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Flash Sale Countdown Popup",
+    "file_path": "fixtures\\grp06_flash_sale_modal_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  },
+  {
+    "sample_id": "grp07_shipping_upgrade_v1_normal_a11y",
+    "fixture_group": "grp07_shipping_upgrade",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Delivery Speed Selection",
+    "file_path": "fixtures\\grp07_shipping_upgrade_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp07_shipping_upgrade_v2_dp_only",
+    "fixture_group": "grp07_shipping_upgrade",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Delivery Speed Selection",
+    "file_path": "fixtures\\grp07_shipping_upgrade_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp07_shipping_upgrade_v3_overlap_contrast_label",
+    "fixture_group": "grp07_shipping_upgrade",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Delivery Speed Selection",
+    "file_path": "fixtures\\grp07_shipping_upgrade_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp07_shipping_upgrade_v4_overlap_downplayed",
+    "fixture_group": "grp07_shipping_upgrade",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Delivery Speed Selection",
+    "file_path": "fixtures\\grp07_shipping_upgrade_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  },
+  {
+    "sample_id": "grp08_paywall_digest_v1_normal_a11y",
+    "fixture_group": "grp08_paywall_digest",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "News Briefing Modal",
+    "file_path": "fixtures\\grp08_paywall_digest_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp08_paywall_digest_v2_dp_only",
+    "fixture_group": "grp08_paywall_digest",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "News Briefing Modal",
+    "file_path": "fixtures\\grp08_paywall_digest_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp08_paywall_digest_v3_overlap_contrast_label",
+    "fixture_group": "grp08_paywall_digest",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "News Briefing Modal",
+    "file_path": "fixtures\\grp08_paywall_digest_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp08_paywall_digest_v4_overlap_downplayed",
+    "fixture_group": "grp08_paywall_digest",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "News Briefing Modal",
+    "file_path": "fixtures\\grp08_paywall_digest_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  },
+  {
+    "sample_id": "grp09_member_perks_v1_normal_a11y",
+    "fixture_group": "grp09_member_perks",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Loyalty Rewards Prompt",
+    "file_path": "fixtures\\grp09_member_perks_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp09_member_perks_v2_dp_only",
+    "fixture_group": "grp09_member_perks",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Loyalty Rewards Prompt",
+    "file_path": "fixtures\\grp09_member_perks_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp09_member_perks_v3_overlap_contrast_label",
+    "fixture_group": "grp09_member_perks",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Loyalty Rewards Prompt",
+    "file_path": "fixtures\\grp09_member_perks_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp09_member_perks_v4_overlap_downplayed",
+    "fixture_group": "grp09_member_perks",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Loyalty Rewards Prompt",
+    "file_path": "fixtures\\grp09_member_perks_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  },
+  {
+    "sample_id": "grp10_app_access_v1_normal_a11y",
+    "fixture_group": "grp10_app_access",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Digital Pass Modal",
+    "file_path": "fixtures\\grp10_app_access_v1_normal_a11y.html",
+    "design_notes": "Normal accept/decline + unchecked valid checkbox + button-name violation"
+  },
+  {
+    "sample_id": "grp10_app_access_v2_dp_only",
+    "fixture_group": "grp10_app_access",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Digital Pass Modal",
+    "file_path": "fixtures\\grp10_app_access_v2_dp_only.html",
+    "design_notes": "Preselected marketing consent (valid label) + confirmshaming/downplayed decline (valid contrast)"
+  },
+  {
+    "sample_id": "grp10_app_access_v3_overlap_contrast_label",
+    "fixture_group": "grp10_app_access",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Digital Pass Modal",
+    "file_path": "fixtures\\grp10_app_access_v3_overlap_contrast_label.html",
+    "design_notes": "Overlap 1: low-contrast confirmshaming/downplayed link; Overlap 2: unlabeled preselected checkbox"
+  },
+  {
+    "sample_id": "grp10_app_access_v4_overlap_downplayed",
+    "fixture_group": "grp10_app_access",
+    "partition": "eval",
+    "source_type": "fixture",
+    "domain": "Digital Pass Modal",
+    "file_path": "fixtures\\grp10_app_access_v4_overlap_downplayed.html",
+    "design_notes": "Overlap: low-contrast visually downplayed neutral link + separate link-name violation"
+  }
+]

@@ -1,0 +1,171 @@
+{
+  "sample_id": "grp10_app_access_v4_overlap_downplayed",
+  "partition": "eval",
+  "source_type": "fixture",
+  "fixture_group": "grp10_app_access",
+  "target": "fixtures\\grp10_app_access_v4_overlap_downplayed.html",
+  "total_controls_captured": 3,
+  "unmatched_axe_findings": [
+    {
+      "rule": "link-name",
+      "target": "a[href$=\"#info\"]"
+    }
+  ],
+  "controls": [
+    {
+      "control_id": "ctrl_001",
+      "tag": "input",
+      "role": "input",
+      "visible_text": "on",
+      "accessible_name": "on",
+      "surrounding_text": "Remember my preference on this device",
+      "checked": false,
+      "font_size": "13.3333px",
+      "text_color": "rgb(0, 0, 0)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 376,
+        "y": 160,
+        "width": 13,
+        "height": 13,
+        "area_px": 169
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "Unlock Member Pricing",
+          "tag": "button",
+          "area_px": 8639,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        },
+        {
+          "text": "Continue as Guest",
+          "tag": "a",
+          "area_px": 1586,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp10_app_access_v4_overlap_downplayed\\crops\\ctrl_001_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp10_app_access_v4_overlap_downplayed\\crops\\ctrl_001_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_002",
+      "tag": "button",
+      "role": "button",
+      "visible_text": "Unlock Member Pricing",
+      "accessible_name": "Unlock Member Pricing",
+      "surrounding_text": "Unlock Member Pricing\nContinue as Guest",
+      "checked": false,
+      "font_size": "15px",
+      "text_color": "rgb(255, 255, 255)",
+      "bg_color": "rgb(11, 87, 208)",
+      "bbox": {
+        "x": 360,
+        "y": 208,
+        "width": 211,
+        "height": 41,
+        "area_px": 8639
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Continue as Guest",
+          "tag": "a",
+          "area_px": 1586,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(184, 184, 184)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp10_app_access_v4_overlap_downplayed\\crops\\ctrl_002_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp10_app_access_v4_overlap_downplayed\\crops\\ctrl_002_context.png",
+      "axe_violations": []
+    },
+    {
+      "control_id": "ctrl_003",
+      "tag": "a",
+      "role": "a",
+      "visible_text": "Continue as Guest",
+      "accessible_name": "Continue as Guest",
+      "surrounding_text": "Unlock Member Pricing\nContinue as Guest",
+      "checked": false,
+      "font_size": "11px",
+      "text_color": "rgb(184, 184, 184)",
+      "bg_color": "rgba(0, 0, 0, 0)",
+      "bbox": {
+        "x": 587,
+        "y": 221,
+        "width": 99,
+        "height": 16,
+        "area_px": 1586
+      },
+      "container_bbox": {
+        "x": 331,
+        "y": 40,
+        "width": 618,
+        "height": 238
+      },
+      "siblings": [
+        {
+          "text": "",
+          "tag": "a",
+          "area_px": 0,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 238)"
+        },
+        {
+          "text": "on",
+          "tag": "input",
+          "area_px": 169,
+          "bg_color": "rgba(0, 0, 0, 0)",
+          "text_color": "rgb(0, 0, 0)"
+        },
+        {
+          "text": "Unlock Member Pricing",
+          "tag": "button",
+          "area_px": 8639,
+          "bg_color": "rgb(11, 87, 208)",
+          "text_color": "rgb(255, 255, 255)"
+        }
+      ],
+      "control_crop": "dataset\\eval\\fixture\\grp10_app_access_v4_overlap_downplayed\\crops\\ctrl_003_control.png",
+      "context_crop": "dataset\\eval\\fixture\\grp10_app_access_v4_overlap_downplayed\\crops\\ctrl_003_context.png",
+      "axe_violations": [
+        "color-contrast"
+      ]
+    }
+  ]
+}
