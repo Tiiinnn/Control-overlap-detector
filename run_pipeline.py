@@ -21,7 +21,7 @@ from google.genai.errors import ServerError, ClientError
 load_dotenv(override=True)
 api_key = os.getenv("GEMINI_API_KEY", "").strip()
 if not api_key:
-    raise RuntimeError("GEMINI_API_KEY is missing in .env.")
+    raise RuntimeError("GEMINI_API_KEY is missing in .env. Save your active AI Studio key first.")
 
 client = genai.Client(api_key=api_key)
 SCOPED_AXE_RULES = {"color-contrast", "button-name", "link-name", "label"}
@@ -118,7 +118,10 @@ def run_rule_based_baseline(ctrl: dict) -> str:
             return "preselected_marketing_consent"
 
     # Check if paired with a primary accept control in the same container
-    accept_terms = ("accept", "claim", "unlock", "agree", "subscribe", "apply", "activate", "upgrade", "keep", "add", "complete")
+    accept_terms = (
+        "accept", "claim", "unlock", "agree", "subscribe", "apply",
+        "activate", "upgrade", "keep", "add", "complete", "allow", "consent",
+    )
     primary_siblings = [
         s for s in siblings
         if any(t in s.get("text", "").lower() for t in accept_terms) and s.get("area_px", 0) > 0
@@ -135,7 +138,10 @@ def run_rule_based_baseline(ctrl: dict) -> str:
             return "confirmshaming"
 
         # 3. Visually downplayed rejection heuristic
-        decline_terms = ("no", "decline", "reject", "skip", "later", "cancel", "close", "without", "guest", "standard", "dismiss")
+        decline_terms = (
+            "no", "decline", "reject", "skip", "later", "cancel", "close",
+            "without", "guest", "standard", "dismiss", "manage", "necessary only",
+        )
         is_decline_text = any(term in ctrl["visible_text"].lower() for term in decline_terms)
         if is_decline_text:
             max_accept_area = max(s["area_px"] for s in primary_siblings)
@@ -162,9 +168,12 @@ def resolve_outcome(axe_hits: list[str], dp_label: str) -> str:
     return "Normal"
 
 
-def extract_controls_js(page) -> list[dict]:
-    return page.evaluate("""
-    () => {
+def extract_controls_from_frame(
+    frame, start_idx: int = 1, offset_x: float = 0.0, offset_y: float = 0.0
+) -> list[dict]:
+    return frame.evaluate(
+        """
+    ({ startIdx, offsetX, offsetY }) => {
       function parseRgb(str) {
         const m = str && str.match(/rgba?\\((\\d+),\\s*(\\d+),\\s*(\\d+)(?:,\\s*([\\d.]+))?\\)/);
         if (!m) return null;
@@ -195,7 +204,7 @@ def extract_controls_js(page) -> list[dict]:
       const selector = 'button, a[href], input[type="checkbox"], input[type="radio"], [role="button"], [role="link"], [role="checkbox"], [role="switch"]';
       const elements = Array.from(document.querySelectorAll(selector));
       const controls = [];
-      let idx = 1;
+      let idx = startIdx;
 
       for (const el of elements) {
         const rect = el.getBoundingClientRect();
@@ -203,7 +212,11 @@ def extract_controls_js(page) -> list[dict]:
         if (rect.width < 4 || rect.height < 4 || style.display === 'none' || style.visibility === 'hidden') {
           continue;
         }
-        if (rect.bottom < 0 || rect.top > window.innerHeight) continue;
+        const absX = rect.x + offsetX;
+        const absY = rect.y + offsetY;
+        if (absY + rect.height < 0 || absY > 900 || absX + rect.width < 0 || absX > 1280) {
+          continue;
+        }
 
         const cid = `ctrl_${String(idx++).padStart(3, '0')}`;
         el.setAttribute('data-thesis-cid', cid);
@@ -258,8 +271,8 @@ def extract_controls_js(page) -> list[dict]:
           is_transparent_bg: isTransparentBg,
           contrast_ratio: contrastRatio(fg, bg),
           bbox: {
-            x: Math.round(rect.x),
-            y: Math.round(rect.y),
+            x: Math.round(absX),
+            y: Math.round(absY),
             width: Math.round(rect.width),
             height: Math.round(rect.height),
             area_px: Math.round(rect.width * rect.height)
@@ -267,8 +280,8 @@ def extract_controls_js(page) -> list[dict]:
           container_bbox: (() => {
             const cr = container.getBoundingClientRect();
             return {
-              x: Math.max(0, Math.round(cr.x)),
-              y: Math.max(0, Math.round(cr.y)),
+              x: Math.max(0, Math.round(cr.x + offsetX)),
+              y: Math.max(0, Math.round(cr.y + offsetY)),
               width: Math.round(cr.width),
               height: Math.round(cr.height)
             };
@@ -278,7 +291,32 @@ def extract_controls_js(page) -> list[dict]:
       }
       return controls;
     }
-    """)
+    """,
+        {"startIdx": start_idx, "offsetX": offset_x, "offsetY": offset_y},
+    )
+
+
+def _resolve_selector_in_frame(frame, selector: str) -> str | None:
+    try:
+        return frame.evaluate(
+            """
+        (sel) => {
+          const el = document.querySelector(sel);
+          if (!el) return null;
+          const direct = el.closest('[data-thesis-cid]');
+          if (direct) return direct.getAttribute('data-thesis-cid');
+          const lbl = el.closest('label');
+          if (lbl && lbl.htmlFor) {
+            const targetInput = document.getElementById(lbl.htmlFor);
+            if (targetInput) return targetInput.getAttribute('data-thesis-cid');
+          }
+          return null;
+        }
+        """,
+            selector,
+        )
+    except Exception:
+        return None
 
 
 def map_axe_to_controls(page, violations: list[dict]) -> dict[str, list[str]]:
@@ -291,20 +329,22 @@ def map_axe_to_controls(page, violations: list[dict]) -> dict[str, list[str]]:
             targets = node.get("target", [])
             if not targets:
                 continue
-            cid = page.evaluate("""
-            (sel) => {
-              const el = document.querySelector(sel);
-              if (!el) return null;
-              const direct = el.closest('[data-thesis-cid]');
-              if (direct) return direct.getAttribute('data-thesis-cid');
-              const lbl = el.closest('label');
-              if (lbl && lbl.htmlFor) {
-                const targetInput = document.getElementById(lbl.htmlFor);
-                if (targetInput) return targetInput.getAttribute('data-thesis-cid');
-              }
-              return null;
-            }
-            """, targets[0])
+
+            if len(targets) == 1:
+                cid = _resolve_selector_in_frame(page.main_frame, targets[0])
+            else:
+                cur_frame = page.main_frame
+                for frame_sel in targets[:-1]:
+                    try:
+                        el_handle = cur_frame.query_selector(frame_sel)
+                        if el_handle:
+                            next_frame = el_handle.content_frame()
+                            if next_frame:
+                                cur_frame = next_frame
+                    except Exception:
+                        break
+                cid = _resolve_selector_in_frame(cur_frame, targets[-1])
+
             if cid:
                 mapped.setdefault(cid, [])
                 if rule_id not in mapped[cid]:
@@ -329,22 +369,58 @@ def run_full_pipeline(target: str, model_id: str = "gemini-3.5-flash-lite", runs
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page(viewport={"width": 1280, "height": 900})
-        page.goto(url, wait_until="networkidle", timeout=30000)
-        page.wait_for_timeout(1000)
+        context = browser.new_context(
+            viewport={"width": 1280, "height": 900},
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            ),
+            locale="en-US",
+        )
+        page = context.new_page()
+        page.goto(url, wait_until="domcontentloaded", timeout=35000)
+        page.wait_for_timeout(3000)  # allow cookie banners & dynamic modals to render
 
         full_shot_path = cap_dir / "viewport.png"
         page.screenshot(path=str(full_shot_path), full_page=False)
 
-        controls = extract_controls_js(page)
+        # Extract from main document + visible child iframes (e.g., consent banners)
+        controls = extract_controls_from_frame(page.main_frame, start_idx=1)
+        for frame in page.frames:
+            if frame == page.main_frame:
+                continue
+            try:
+                frame_el = frame.frame_element()
+                f_box = frame_el.bounding_box()
+                if not f_box or f_box["width"] < 20 or f_box["height"] < 20:
+                    continue
+                frame_ctrls = extract_controls_from_frame(
+                    frame,
+                    start_idx=len(controls) + 1,
+                    offset_x=f_box["x"],
+                    offset_y=f_box["y"],
+                )
+                controls.extend(frame_ctrls)
+            except Exception:
+                continue
+
         axe_raw = Axe().run(page).response
         axe_by_cid = map_axe_to_controls(page, axe_raw.get("violations", []))
+        context.close()
         browser.close()
 
     full_img = Image.open(full_shot_path).convert("RGB")
     W, H = full_img.size
 
-    print(f"\nPipeline Run: '{target}' | Model: '{model_id}' | Runs/Control: {runs}\n")
+    print(f"\nPipeline Run: '{target}' | Model: '{model_id}' | Controls Found: {len(controls)} | Runs/Control: {runs}\n")
+
+    if not controls:
+        print(
+            f"[WARNING] 0 visible interactive controls were captured on '{target}'. "
+            f"Open '{full_shot_path}' to check if the site displayed a CAPTCHA or blank screen."
+        )
+        return
+
     print(
         f"{'Control':8s} | {'axe-core Result':18s} | {'Baseline Result':28s} | "
         f"{'Model Label':28s} | {'Conf':4s} | {'Resolved Outcome':22s} | {'Rationale'}"
@@ -354,7 +430,7 @@ def run_full_pipeline(target: str, model_id: str = "gemini-3.5-flash-lite", runs
     records = []
     csv_rows = []
     md_lines = [
-        f"# Control-Level Pipeline Log Table\n",
+        "# Control-Level Pipeline Log Table\n",
         f"- **Target:** `{target}`\n- **VLM Model:** `{model_id}` (`runs={runs}`, `temperature=0.0`, `seed=42`)\n- **Timestamp:** `{timestamp}`\n",
         "| Control ID | Control Text / Tag | `axe-core` Result | Rule-Based Baseline | Model Label (Majority Vote) | Confidence | Rationale | Resolved Outcome (VLM + axe) | Resolved Outcome (Baseline + axe) |",
         "| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :--- | :--- |",
@@ -365,28 +441,42 @@ def run_full_pipeline(target: str, model_id: str = "gemini-3.5-flash-lite", runs
         b = ctrl["bbox"]
         cb = ctrl["container_bbox"]
 
-        # 1. Crops
-        c_box = (max(0, b["x"] - 8), max(0, b["y"] - 8), min(W, b["x"] + b["width"] + 8), min(H, b["y"] + b["height"] + 8))
-        control_crop = full_img.crop(c_box)
+        # 1. Isolated control crop
+        x1 = max(0, min(W - 1, b["x"] - 8))
+        y1 = max(0, min(H - 1, b["y"] - 8))
+        x2 = max(x1 + 1, min(W, b["x"] + b["width"] + 8))
+        y2 = max(y1 + 1, min(H, b["y"] + b["height"] + 8))
+        control_crop = full_img.crop((x1, y1, x2, y2))
         control_crop.save(cap_dir / f"{cid}_control.png")
 
+        # 2. Contextual crop with magenta bounding box around target control
         highlighted = full_img.copy()
         draw = ImageDraw.Draw(highlighted)
-        draw.rectangle([b["x"] - 2, b["y"] - 2, b["x"] + b["width"] + 2, b["y"] + b["height"] + 2], outline="#FF00FF", width=3)
-        ctx_box = (max(0, cb["x"]), max(0, cb["y"]), min(W, min(cb["x"] + cb["width"], b["x"] + 650)), min(H, min(cb["y"] + cb["height"], b["y"] + 450)))
-        if ctx_box[2] - ctx_box[0] < 50 or ctx_box[3] - ctx_box[1] < 50:
-            ctx_box = (max(0, b["x"] - 250), max(0, b["y"] - 200), min(W, b["x"] + 350), min(H, b["y"] + 200))
-        context_crop = highlighted.crop(ctx_box)
+        draw.rectangle(
+            [b["x"] - 2, b["y"] - 2, b["x"] + b["width"] + 2, b["y"] + b["height"] + 2],
+            outline="#FF00FF",
+            width=3,
+        )
+        cx1 = max(0, min(W - 1, cb["x"]))
+        cy1 = max(0, min(H - 1, cb["y"]))
+        cx2 = max(cx1 + 1, min(W, min(cb["x"] + cb["width"], b["x"] + 650)))
+        cy2 = max(cy1 + 1, min(H, min(cb["y"] + cb["height"], b["y"] + 450)))
+        if (cx2 - cx1) < 50 or (cy2 - cy1) < 50:
+            cx1 = max(0, b["x"] - 250)
+            cy1 = max(0, b["y"] - 200)
+            cx2 = max(cx1 + 1, min(W, b["x"] + 350))
+            cy2 = max(cy1 + 1, min(H, b["y"] + 200))
+        context_crop = highlighted.crop((cx1, cy1, cx2, cy2))
         context_crop.save(cap_dir / f"{cid}_context.png")
 
-        # 2. Branch A: axe-core result
+        # 3. Branch A: axe-core result
         axe_hits = axe_by_cid.get(cid, [])
         axe_str = ", ".join(axe_hits) if axe_hits else "none"
 
-        # 3. Branch B: Rule-based heuristic baseline result
+        # 4. Branch B: Rule-based heuristic baseline result
         baseline_label = run_rule_based_baseline(ctrl)
 
-        # 4. Branch C: Multimodal VLM detector (3-run majority vote)
+        # 5. Branch C: Multimodal VLM detector (majority vote across runs)
         meta_prompt = (
             f"Evaluate control `{cid}` using Image 1 (control crop), Image 2 (magenta-highlighted context), "
             f"and structured metadata:\n{json.dumps(ctrl, indent=2)}"
@@ -402,7 +492,7 @@ def run_full_pipeline(target: str, model_id: str = "gemini-3.5-flash-lite", runs
         model_label = top_label if top_count >= majority_needed else "uncertain"
         chosen = next((p for p in run_preds if p.predicted_category == model_label), run_preds[0])
 
-        # 5. Control-level resolved outcomes
+        # 6. Control-level resolved outcomes
         resolved_vlm = resolve_outcome(axe_hits, model_label)
         resolved_baseline = resolve_outcome(axe_hits, baseline_label)
 
@@ -453,6 +543,10 @@ def run_full_pipeline(target: str, model_id: str = "gemini-3.5-flash-lite", runs
             f"| **{resolved_vlm}** "
             f"| {resolved_baseline} |"
         )
+
+    if not csv_rows:
+        print(f"[WARNING] No control records generated for '{target}'.")
+        return
 
     # Save permanent log files (both timestamped archive and 'latest' shortcut)
     for prefix in (f"{slug}_{timestamp}", "latest"):
