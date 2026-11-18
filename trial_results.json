@@ -1,0 +1,164 @@
+[
+  {
+    "screenshot": "control.png",
+    "model_id": "gemini-3.5-flash-lite",
+    "runs": 3,
+    "run_votes": [
+      "none",
+      "none",
+      "none"
+    ],
+    "final_category": "none",
+    "target_control_text": "Decline",
+    "confidence": 1.0,
+    "visual_prominence_check": "The decline button is styled as a filled neutral-gray button with comparable dimensions to the primary accept button, avoiding low-contrast text link presentation.",
+    "textual_tone_check": "The decline wording is neutral (\"Decline\") without any guilt-inducing, self-deprecating, or emotional language.",
+    "state_and_label_check": "Not applicable as this is a standard button pair rather than a preselected marketing checkbox.",
+    "rationale": "The interface presents standard 'Accept' and 'Decline' buttons where the decline button is clearly visible as a filled button with neutral text, showing none of the specified deceptive patterns.",
+    "additional_findings": []
+  },
+  {
+    "screenshot": "control1.png",
+    "model_id": "gemini-3.5-flash-lite",
+    "runs": 3,
+    "run_votes": [
+      "none",
+      "none",
+      "none"
+    ],
+    "final_category": "none",
+    "target_control_text": "Close",
+    "confidence": 1.0,
+    "visual_prominence_check": "The Close button is styled with a neutral grey background and black text, placed below a blue primary action button.",
+    "textual_tone_check": "Standard neutral rejection language.",
+    "state_and_label_check": "No preselected marketing checkboxes or promotional toggles are present.",
+    "rationale": "The interface contains standard dialog controls without any preselected marketing consents, confirmshaming language, or visually downplayed rejection patterns.",
+    "additional_findings": []
+  },
+  {
+    "screenshot": "control2.png",
+    "model_id": "gemini-3.5-flash-lite",
+    "runs": 3,
+    "run_votes": [
+      "preselected_marketing_consent",
+      "preselected_marketing_consent",
+      "preselected_marketing_consent"
+    ],
+    "final_category": "preselected_marketing_consent",
+    "target_control_text": "Yes, send me exclusive offers and promotions",
+    "confidence": 1.0,
+    "visual_prominence_check": "Standard checkbox appearance within a registration form.",
+    "textual_tone_check": "Contains promotional and marketing terms ('exclusive offers and promotions').",
+    "state_and_label_check": "The checkbox is visibly checked (on) by default upon initial display, accompanied by a promotional label.",
+    "rationale": "A checkbox associated with marketing terms ('exclusive offers and promotions') is visibly checked by default at initial display, satisfying the preselected_marketing_consent pattern.",
+    "additional_findings": []
+  },
+  {
+    "screenshot": "control3.png",
+    "model_id": "gemini-3.5-flash-lite",
+    "runs": 3,
+    "run_votes": [
+      "visually_downplayed_rejection",
+      "visually_downplayed_rejection",
+      "visually_downplayed_rejection"
+    ],
+    "final_category": "visually_downplayed_rejection",
+    "target_control_text": "No thanks",
+    "confidence": 1.0,
+    "visual_prominence_check": "The rejection option 'No thanks' is presented as a plain underlined text link with muted gray color, while the acceptance option 'Subscribe' is presented as a prominent solid blue filled button.",
+    "textual_tone_check": "The rejection text uses standard neutral decline wording ('No thanks') without guilt-inducing language.",
+    "state_and_label_check": "Not applicable to a checkbox state, as this is a paired accept/reject control set.",
+    "rationale": "The rejection control ('No thanks') is visually downplayed as a low-contrast, plain text link compared to the prominent solid-filled acceptance button ('Subscribe'), matching the visually_downplayed_rejection pattern.",
+    "additional_findings": []
+  },
+  {
+    "screenshot": "control4.png",
+    "model_id": "gemini-3.5-flash-lite",
+    "runs": 3,
+    "run_votes": [
+      "none",
+      "none",
+      "none"
+    ],
+    "final_category": "none",
+    "target_control_text": "Reject all",
+    "confidence": 1.0,
+    "visual_prominence_check": "Both the Accept all and Reject all buttons share identical blue background fill, white text, and dimensions.",
+    "textual_tone_check": "Neutral decline wording without guilt-inducing or self-deprecating language.",
+    "state_and_label_check": "Not applicable as these are standard buttons rather than preselected checkboxes.",
+    "rationale": "The interface presents standard cookie preferences with equally prominent accept and reject buttons, exhibiting none of the specified deceptive patterns.",
+    "additional_findings": []
+  },
+  {
+    "screenshot": "control5.png",
+    "model_id": "gemini-3.5-flash-lite",
+    "runs": 3,
+    "run_votes": [
+      "none",
+      "none",
+      "none"
+    ],
+    "final_category": "none",
+    "target_control_text": "Save changes",
+    "confidence": 1.0,
+    "visual_prominence_check": "The interface displays two icon-based buttons of equal size and dimension side-by-side. The acceptance button features a solid green fill with a white checkmark, while the rejection button features a light grey fill with a black cross. Both controls share comparable visual weight as standard square interactive buttons.",
+    "textual_tone_check": "Standard neutral prompt ('Save your changes? Your edits will be applied to this document.') and icon-only buttons without emotional or guilt-inducing wording.",
+    "state_and_label_check": "No checkboxes or toggles present.",
+    "rationale": "The dialog presents standard document saving options with equal-sized icon buttons and standard neutral text, exhibiting none of the specified deceptive patterns.",
+    "additional_findings": []
+  },
+  {
+    "screenshot": "control6.png",
+    "model_id": "gemini-3.5-flash-lite",
+    "runs": 3,
+    "run_votes": [
+      "preselected_marketing_consent",
+      "preselected_marketing_consent",
+      "preselected_marketing_consent"
+    ],
+    "final_category": "preselected_marketing_consent",
+    "target_control_text": "Send me exclusive offers, promotions and special deals",
+    "confidence": 1.0,
+    "visual_prominence_check": "Standard checkbox control displayed inline with label text.",
+    "textual_tone_check": "Associated label contains promotional and marketing-related terms ('exclusive offers, promotions and special deals').",
+    "state_and_label_check": "The checkbox is visibly checked (on) at initial display.",
+    "rationale": "A checkbox with promotional marketing terms in its label is checked by default upon initial display.",
+    "additional_findings": []
+  },
+  {
+    "screenshot": "control7.png",
+    "model_id": "gemini-3.5-flash-lite",
+    "runs": 3,
+    "run_votes": [
+      "none",
+      "none",
+      "none"
+    ],
+    "final_category": "none",
+    "target_control_text": "Confirm / Reject",
+    "confidence": 1.0,
+    "visual_prominence_check": "Both buttons have identical grey styling, size, shape, and fill, with no visual downplaying.",
+    "textual_tone_check": "The button labels use neutral standard terminology ('Confirm' and 'Reject') without any emotional, guilt-inducing, or marketing language.",
+    "state_and_label_check": "Standard neutral button labels with no checkboxes or pre-selected marketing toggles present.",
+    "rationale": "The dialog displays two standard neutral buttons ('Confirm' and 'Reject') of equal visual prominence and standard terminology, exhibiting none of the specified deceptive patterns.",
+    "additional_findings": []
+  },
+  {
+    "screenshot": "control8.png",
+    "model_id": "gemini-3.5-flash-lite",
+    "runs": 3,
+    "run_votes": [
+      "none",
+      "none",
+      "none"
+    ],
+    "final_category": "none",
+    "target_control_text": "Delete this file?",
+    "confidence": 1.0,
+    "visual_prominence_check": "The two buttons have identical size, shape, and filled styling.",
+    "textual_tone_check": "No visible text labels on the buttons, and neutral wording in the dialog header.",
+    "state_and_label_check": "Not applicable.",
+    "rationale": "The interface presents a standard confirmation dialog without any of the defined dark pattern criteria (no preselected marketing consent, no confirmshaming text, and no visually downplayed rejection control).",
+    "additional_findings": []
+  }
+]

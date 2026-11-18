@@ -1,0 +1,104 @@
+[
+  {
+    "control_id": "ctrl_001",
+    "control_text": "Browse Product Catalog",
+    "axe_core_result": [],
+    "baseline_result": "none",
+    "model_label": "none",
+    "run_votes": [
+      "none",
+      "none",
+      "none"
+    ],
+    "confidence": 1.0,
+    "rationale": "The evaluated control is a standard navigation button with neutral language and normal visual prominence, falling under none of the deceptive patterns.",
+    "resolved_outcome_vlm": "Normal",
+    "resolved_outcome_baseline": "Normal"
+  },
+  {
+    "control_id": "ctrl_002",
+    "control_text": "2. Accessibility-Only Control (Missing Button Name)",
+    "axe_core_result": [
+      "button-name"
+    ],
+    "baseline_result": "none",
+    "model_label": "none",
+    "run_votes": [
+      "none",
+      "none",
+      "none"
+    ],
+    "confidence": 1.0,
+    "rationale": "The inspected element is a standard interface component used for testing accessibility issues rather than implementing any deceptive dark patterns such as confirmshaming or preselected marketing consent.",
+    "resolved_outcome_vlm": "Accessibility-only",
+    "resolved_outcome_baseline": "Accessibility-only"
+  },
+  {
+    "control_id": "ctrl_003",
+    "control_text": "on",
+    "axe_core_result": [],
+    "baseline_result": "preselected_marketing_consent",
+    "model_label": "preselected_marketing_consent",
+    "run_votes": [
+      "preselected_marketing_consent",
+      "preselected_marketing_consent",
+      "preselected_marketing_consent"
+    ],
+    "confidence": 1.0,
+    "rationale": "The control is pre-selected (checked=true) upon load and directly relates to promotional/marketing communications based on its accompanying label text, satisfying the criteria for preselected_marketing_consent.",
+    "resolved_outcome_vlm": "Deceptive pattern-only",
+    "resolved_outcome_baseline": "Deceptive pattern-only"
+  },
+  {
+    "control_id": "ctrl_004",
+    "control_text": "Claim My 25% Discount",
+    "axe_core_result": [],
+    "baseline_result": "none",
+    "model_label": "none",
+    "run_votes": [
+      "none",
+      "none",
+      "none"
+    ],
+    "confidence": 1.0,
+    "rationale": "The evaluated control is the primary accept button ('Claim My 25% Discount'). While the dialog contains confirmshaming in its decline link, the target control itself is the normal acceptance action and does not exhibit deceptive patterns.",
+    "resolved_outcome_vlm": "Normal",
+    "resolved_outcome_baseline": "Normal"
+  },
+  {
+    "control_id": "ctrl_005",
+    "control_text": "No thanks, I prefer paying full price and missing out",
+    "axe_core_result": [
+      "color-contrast"
+    ],
+    "baseline_result": "confirmshaming",
+    "model_label": "confirmshaming",
+    "run_votes": [
+      "confirmshaming",
+      "confirmshaming",
+      "confirmshaming"
+    ],
+    "confidence": 1.0,
+    "rationale": "The control pairs an acceptance option with a decline option whose wording uses guilt-inducing and emotionally loaded language, fulfilling the criteria for confirmshaming.",
+    "resolved_outcome_vlm": "Overlap",
+    "resolved_outcome_baseline": "Overlap"
+  },
+  {
+    "control_id": "ctrl_006",
+    "control_text": "on",
+    "axe_core_result": [
+      "label"
+    ],
+    "baseline_result": "preselected_marketing_consent",
+    "model_label": "preselected_marketing_consent",
+    "run_votes": [
+      "preselected_marketing_consent",
+      "preselected_marketing_consent",
+      "preselected_marketing_consent"
+    ],
+    "confidence": 1.0,
+    "rationale": "The control is a checkbox that is checked by default on page load and its associated label contains explicit promotional and marketing terminology, fitting the definition of preselected marketing consent.",
+    "resolved_outcome_vlm": "Overlap",
+    "resolved_outcome_baseline": "Overlap"
+  }
+]
